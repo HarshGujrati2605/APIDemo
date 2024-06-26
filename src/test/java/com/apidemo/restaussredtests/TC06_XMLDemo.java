@@ -21,8 +21,48 @@ public class TC06_XMLDemo {
 //5) Find values using XML Path in XML response 
 ////**
 	
-	@Test
+	//Validating single 
+	
+	@Test(priority = 1)
 	public void singleCOntentTest() {
+		
+		given()
+		.when().get("https://mocktarget.apigee.net/xml")
+		.then().assertThat().statusCode(200).body("root.city", equalTo("San Jose")).log().all();
+		
+		
+	}
+	
+	
+	@Test(priority = 2)
+	public void multipleCOntentTest() {
+		
+		given()
+		.when().get("https://mocktarget.apigee.net/xml")
+		.then().assertThat().statusCode(200).body("root.city", equalTo("San Jose")).body("root.firstName" , equalTo("John")).log().all();
+		
+		
+	}
+	
+	
+
+	@Test(priority = 3)
+	public void testUsingXpath() {
+		
+		given()
+		.when().get("https://mocktarget.apigee.net/xml")
+		.then().assertThat().statusCode(200).body(hasXPath("/root/city", containsString("San")));
+		
+		
+	}
+	
+
+	@Test(priority = 4)
+	public void testUsingXpathNew() {
+		
+		given()
+		.when().get("https://mocktarget.apigee.net/xml")
+		.then().assertThat().statusCode(200).body(hasXPath("/root/city[contains(text() , 'San')]"));
 		
 		
 	}
