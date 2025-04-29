@@ -34,7 +34,7 @@ public class TC02_Test_Post_Request {
 		given().contentType(ContentType.JSON).body(map)
 		.when().post()
 		.then().assertThat().statusCode(201).body("name", equalTo(name)).body("job", equalTo("QA"))
-		.header("Server", "cloudflare");
+		.header("Server", "cloudflare").log().all();
 		
 	}
 	

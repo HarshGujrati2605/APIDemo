@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.apidemo.restaussredtests.TC06_XMLDemo">
+      <class name="com.apidemo.restaussredtests.BasicAPI">
         <methods>
-          <include name="testUsingXpath"/>
+          <include name="validateAPITestOne"/>
         </methods>
-      </class> <!-- com.apidemo.restaussredtests.TC06_XMLDemo -->
+      </class> <!-- com.apidemo.restaussredtests.BasicAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

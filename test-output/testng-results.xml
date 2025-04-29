@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-26T12:17:54 IST" name="Default suite" finished-at="2024-06-26T12:17:56 IST" duration-ms="1627">
+  <suite started-at="2025-04-24T14:21:27 IST" name="Default suite" finished-at="2025-04-24T14:21:29 IST" duration-ms="1840">
     <groups>
     </groups>
-    <test started-at="2024-06-26T12:17:54 IST" name="Default test" finished-at="2024-06-26T12:17:56 IST" duration-ms="1627">
-      <class name="com.apidemo.restaussredtests.TC06_XMLDemo">
-        <test-method signature="testUsingXpathNew()[pri:3, instance:com.apidemo.restaussredtests.TC06_XMLDemo@1e1a0406]" started-at="2024-06-26T12:17:54 IST" name="testUsingXpathNew" finished-at="2024-06-26T12:17:56 IST" duration-ms="1594" status="PASS">
+    <test started-at="2025-04-24T14:21:27 IST" name="Default test" finished-at="2025-04-24T14:21:29 IST" duration-ms="1840">
+      <class name="com.apidemo.restaussredtests.BasicAPI">
+        <test-method signature="validateAPITestOne()[pri:1, instance:com.apidemo.restaussredtests.BasicAPI@e350b40]" started-at="2025-04-24T14:21:27 IST" name="validateAPITestOne" finished-at="2025-04-24T14:21:29 IST" duration-ms="1805" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUsingXpathNew -->
-      </class> <!-- com.apidemo.restaussredtests.TC06_XMLDemo -->
+        </test-method> <!-- validateAPITestOne -->
+      </class> <!-- com.apidemo.restaussredtests.BasicAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

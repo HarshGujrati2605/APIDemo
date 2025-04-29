@@ -1,7 +1,6 @@
 package com.apidemo.restaussredtests;
 
 import org.testng.annotations.Test;
-import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.*;
 public class TC01_Test_Get_Request {
 	
